@@ -5,11 +5,10 @@ using UnityEngine.UI;
 
 public class PlayerBehaviour : MonoBehaviour
 {
+    //[SerializeField]
     private int speed = 4;
-
-    public Image[] lifes = new Image[3];
-    [SerializeField]
-    private int life = 3;
+    private int MAX_LIFE = 3;
+    public int life = 3;
 
     // Start is called before the first frame update
     void Start()
@@ -40,14 +39,14 @@ public class PlayerBehaviour : MonoBehaviour
     private void takeDamage(){
         if(life > 0){
             life--;
-            lifes[life].color = new Color32(255, 3, 0, 45);
+            //lifes[life].color = new Color32(255, 3, 0, 45);
         }
         // fazer morte
 	}
 
     private void receiveLife(){
-        if(life < lifes.Length){
-            lifes[life].color = new Color32(255, 255, 255, 255);
+        if(life < MAX_LIFE){
+            //lifes[life].color = new Color32(255, 255, 255, 255);
             life++;
 		}
 	}

@@ -11,6 +11,7 @@
 - Dano para tag "Damage"
 
 *Objetivos para alcançar:*
+- poção some após hidratação
 - Menuzinho inicial
 - GameOver
 - Fazer mapas a partir de imagens pixeladas
