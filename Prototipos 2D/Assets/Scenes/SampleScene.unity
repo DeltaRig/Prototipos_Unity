@@ -814,7 +814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameController: {fileID: 73106505}
-  life: 3
+  _life: 3
 --- !u!4 &994661008
 Transform:
   m_ObjectHideFlags: 0
@@ -901,7 +901,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -7.0000534, y: 7.5}
+  m_AnchoredPosition: {x: -7.000061, y: 7.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1047695146
@@ -1454,6 +1454,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3731489793343508047, guid: b8e3147fd7b9b2d4dbd35f8271693940,
+        type: 3}
+      propertyPath: gameController
+      value: 
+      objectReference: {fileID: 73106505}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8e3147fd7b9b2d4dbd35f8271693940, type: 3}
 --- !u!1001 &2261519440270824623

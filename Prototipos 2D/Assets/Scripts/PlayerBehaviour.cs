@@ -10,7 +10,7 @@ public class PlayerBehaviour : MonoBehaviour
     //[SerializeField]
     private int speed = 4;
     private int MAX_LIFE = 3;
-    public int life = 3;
+    public int _life = 3;
 
     private void Awake()
     {
@@ -44,18 +44,20 @@ public class PlayerBehaviour : MonoBehaviour
     }
 
     private void takeDamage(){
-        if(life > 0){
-            life--;
+        if(_life > 0){
+            _life--;
             gameController.playerTakeDamage();
         }
         // fazer morte
 	}
 
-    private void receiveLife(){
-        if(life < MAX_LIFE){
+    public void receiveLife(int life){
+        int aux = _life + life;
+        for (int i = _life; i < aux && i < MAX_LIFE; i++)
+        {
             gameController.playerReceiveHealth();
-            life++;
-		}
+            _life++;
+        }
 	}
 
 	private void OnTriggerEnter2D(Collider2D collision) {
@@ -63,8 +65,6 @@ public class PlayerBehaviour : MonoBehaviour
 
         if ( tag == "Damage"){
             takeDamage();
-		} else if(tag == "Health"){
-            receiveLife();
 		}
 	}
 

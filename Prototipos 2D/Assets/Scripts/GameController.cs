@@ -30,14 +30,19 @@ public class GameController : MonoBehaviour
     // METODOS PLAYER
     public void playerTakeDamage()
     {
-        ui_playerLifes[playerBehaviour.life].color = new Color32(255, 3, 0, 45);
+        ui_playerLifes[playerBehaviour._life].color = new Color32(255, 3, 0, 45);
 	}
 
     public void playerReceiveHealth()
     { 
-        ui_playerLifes[playerBehaviour.life].color = new Color32(255, 255, 255, 255);
+        ui_playerLifes[playerBehaviour._life].color = new Color32(255, 255, 255, 255);
     }
 
+    //METODOS HEALTH POTION
+    public void playerFindPotion(int life)
+    {
+        playerBehaviour.receiveLife(life);
 
+    }
 
 }
