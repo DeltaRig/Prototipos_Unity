@@ -5,27 +5,39 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-    private PlayerBehaviour player;
+    //variaveis relacionadas ao PLAYER
+    private PlayerBehaviour playerBehaviour;
     public Image[] ui_playerLifes = new Image[3];
 
-    // Start is called before the first frame update
+
+
+    private void Awake()
+    {
+        playerBehaviour = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>(); // pega o código do player
+    }
+
     void Start()
     {
-        // pega o código do player:
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     // METODOS PLAYER
-    private void playerTakeDamage(){
-        if(player.life > 0){
-            ui_playerLifes[player.life].color = new Color32(255, 3, 0, 45);
-        }
+    public void playerTakeDamage()
+    {
+        ui_playerLifes[playerBehaviour.life].color = new Color32(255, 3, 0, 45);
 	}
+
+    public void playerReceiveHealth()
+    { 
+        ui_playerLifes[playerBehaviour.life].color = new Color32(255, 255, 255, 255);
+    }
+
+
 
 }

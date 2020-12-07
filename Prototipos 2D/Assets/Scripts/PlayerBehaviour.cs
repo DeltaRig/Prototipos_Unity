@@ -5,10 +5,17 @@ using UnityEngine.UI;
 
 public class PlayerBehaviour : MonoBehaviour
 {
+    public GameController gameController; // recebe obj no unity
+
     //[SerializeField]
     private int speed = 4;
     private int MAX_LIFE = 3;
     public int life = 3;
+
+    private void Awake()
+    {
+        //gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -39,14 +46,14 @@ public class PlayerBehaviour : MonoBehaviour
     private void takeDamage(){
         if(life > 0){
             life--;
-            //lifes[life].color = new Color32(255, 3, 0, 45);
+            gameController.playerTakeDamage();
         }
         // fazer morte
 	}
 
     private void receiveLife(){
         if(life < MAX_LIFE){
-            //lifes[life].color = new Color32(255, 255, 255, 255);
+            gameController.playerReceiveHealth();
             life++;
 		}
 	}
