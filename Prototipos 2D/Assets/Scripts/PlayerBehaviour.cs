@@ -60,12 +60,14 @@ public class PlayerBehaviour : MonoBehaviour
         }
 	}
 
+
+
+
 	private void OnTriggerEnter2D(Collider2D collision) {
         var tag = collision.gameObject.tag;
 
-        if ( tag == "Damage"){
+        if (tag == "Damage")
             takeDamage();
-		}
 	}
 
 }
