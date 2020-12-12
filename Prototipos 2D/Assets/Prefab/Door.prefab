@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 814303446916310758}
   - component: {fileID: 34849936126146382}
   m_Layer: 0
-  m_Name: Porta
+  m_Name: Door
   m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -124,7 +124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28e9b3e612869f4ab16f80e05137be5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texto: Teste
   animator: {fileID: 0}
 --- !u!95 &34849936126146382
 Animator:

@@ -12,9 +12,13 @@ public class PlayerBehaviour : MonoBehaviour
     private int MAX_LIFE = 3;
     public int _life = 3;
 
+    [SerializeField]
+    private int playerCoin;
+
     private void Awake()
     {
         //gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+        playerCoin = 0;
     }
 
     // Start is called before the first frame update
@@ -27,14 +31,15 @@ public class PlayerBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    
+
     }
 
-	void FixedUpdate() {
+    void FixedUpdate()
+    {
         movement();
     }
 
-	private void movement()
+    private void movement()
     {
         float inputX = Input.GetAxis("Horizontal"); //puxa das config do unity
         float inputY = Input.GetAxis("Vertical");
@@ -43,31 +48,39 @@ public class PlayerBehaviour : MonoBehaviour
         transform.Translate(movement);
     }
 
-    private void takeDamage(){
-        if(_life > 0){
+    private void takeDamage()
+    {
+        if (_life > 0)
+        {
             _life--;
             gameController.playerTakeDamage();
         }
         // fazer morte
-	}
+    }
 
-    public void receiveLife(int life){
+    public void receiveLife(int life)
+    {
         int aux = _life + life;
         for (int i = _life; i < aux && i < MAX_LIFE; i++)
         {
             gameController.playerReceiveHealth();
             _life++;
         }
-	}
+    }
+
+    public int receiveCoin()
+    {
+        playerCoin++;
+        return playerCoin;
+    }
 
 
-
-
-	private void OnTriggerEnter2D(Collider2D collision) {
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
         var tag = collision.gameObject.tag;
 
         if (tag == "Damage")
             takeDamage();
-	}
+    }
 
 }

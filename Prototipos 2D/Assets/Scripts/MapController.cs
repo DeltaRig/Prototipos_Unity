@@ -58,11 +58,11 @@ public class MapController : MonoBehaviour
             {
                 spawnPositions[counter] = currentSpawnPos;
                 counter++;
-                currentSpawnPos.x += wall.GetComponent<SpriteRenderer>().bounds.extents.x * 2;
+                currentSpawnPos.x += wall.GetComponent<SpriteRenderer>().bounds.extents.x;
             }
 
             currentSpawnPos.x = startingSpawnPosition.x;
-            currentSpawnPos.y += wall.GetComponent<SpriteRenderer>().bounds.extents.y * 2;
+            currentSpawnPos.y += wall.GetComponent<SpriteRenderer>().bounds.extents.y;
         }
 
         counter = 0;

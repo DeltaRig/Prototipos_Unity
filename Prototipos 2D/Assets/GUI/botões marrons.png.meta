@@ -1,0 +1,706 @@
+fileFormatVersion: 2
+guid: 45852104be8bdc34e81c6c7c1432ee53
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3229972557507231875
+    second: "bot\xF5es marrons_2"
+  - first:
+      213: -4571332427975638655
+    second: "bot\xF5es marrons_10"
+  - first:
+      213: 5441039796443417151
+    second: "bot\xF5es marrons_16"
+  - first:
+      213: 4848436286122136497
+    second: "bot\xF5es marrons_17"
+  - first:
+      213: 1861806671507231979
+    second: "bot\xF5es marrons_21"
+  - first:
+      213: -4977183468371979606
+    second: "bot\xF5es marrons_25"
+  - first:
+      213: 9222584803608302995
+    second: "bot\xF5es marrons_26"
+  - first:
+      213: -5656894131146926948
+    second: "bot\xF5es marrons_27"
+  - first:
+      213: -1205976628901888198
+    second: "bot\xF5es marrons_28"
+  - first:
+      213: -1938628827857441017
+    second: "bot\xF5es marrons_29"
+  - first:
+      213: 2930077071641918716
+    second: "bot\xF5es marrons_30"
+  - first:
+      213: -4785112683859573535
+    second: "bot\xF5es marrons_31"
+  - first:
+      213: 7935743134316790798
+    second: "bot\xF5es marrons_32"
+  - first:
+      213: 6043345427288907424
+    second: "bot\xF5es marrons_35"
+  - first:
+      213: 4988391486295798008
+    second: "bot\xF5es marrons_36"
+  - first:
+      213: -2127311892540802930
+    second: "bot\xF5es marrons_37"
+  - first:
+      213: 505546472734248980
+    second: "bot\xF5es marrons_40"
+  - first:
+      213: 3121418781277165809
+    second: "bot\xF5es marrons_41"
+  - first:
+      213: -6136735559443090732
+    second: "bot\xF5es marrons_42"
+  - first:
+      213: 8825004801560568099
+    second: "bot\xF5es marrons_43"
+  - first:
+      213: -6105346897275961053
+    second: "bot\xF5es marrons_44"
+  - first:
+      213: 3118073697529076825
+    second: "bot\xF5es marrons_0"
+  - first:
+      213: -6155047983043585938
+    second: "bot\xF5es marrons_1"
+  - first:
+      213: 508008328795261597
+    second: "bot\xF5es marrons_3"
+  - first:
+      213: 4830243773121595338
+    second: "bot\xF5es marrons_4"
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_2"
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 4614
+        width: 505
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f75837215dc23d0800000000000000
+      internalID: -3229972557507231875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_10"
+      rect:
+        serializedVersion: 2
+        x: 3825
+        y: 4837
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181c940706d5f80c0800000000000000
+      internalID: -4571332427975638655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_16"
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 4039
+        width: 1005
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a06c3fdd4728b40800000000000000
+      internalID: 5441039796443417151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_17"
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 4099
+        width: 505
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b39c663d1b194340800000000000000
+      internalID: 4848436286122136497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_21"
+      rect:
+        serializedVersion: 2
+        x: 3805
+        y: 4334
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be414afad4776d910800000000000000
+      internalID: 1861806671507231979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_25"
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 3526
+        width: 1008
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2ddb9710e7deab0800000000000000
+      internalID: -4977183468371979606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_26"
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 3589
+        width: 505
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3951df9f3043dff70800000000000000
+      internalID: 9222584803608302995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_27"
+      rect:
+        serializedVersion: 2
+        x: 2614
+        y: 3556
+        width: 1285
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94defc52ccae71b0800000000000000
+      internalID: -5656894131146926948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_28"
+      rect:
+        serializedVersion: 2
+        x: 2956
+        y: 3369
+        width: 883
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f31e245a2834fe0800000000000000
+      internalID: -1205976628901888198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_29"
+      rect:
+        serializedVersion: 2
+        x: 3091
+        y: 3269
+        width: 628
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70fa9343a5b9815e0800000000000000
+      internalID: -1938628827857441017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_30"
+      rect:
+        serializedVersion: 2
+        x: 3114
+        y: 3104
+        width: 127
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfcbbbb8299b9a820800000000000000
+      internalID: 2930077071641918716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_31"
+      rect:
+        serializedVersion: 2
+        x: 4946
+        y: 2981
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4855cdd5dd79db0800000000000000
+      internalID: -4785112683859573535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_32"
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 2406
+        width: 505
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0482b5d55c612e60800000000000000
+      internalID: 7935743134316790798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_35"
+      rect:
+        serializedVersion: 2
+        x: 2769
+        y: 2539
+        width: 205
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae5988a5a64ed350800000000000000
+      internalID: 6043345427288907424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_36"
+      rect:
+        serializedVersion: 2
+        x: 3226
+        y: 2539
+        width: 283
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f07e3d80a35a3540800000000000000
+      internalID: 4988391486295798008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_37"
+      rect:
+        serializedVersion: 2
+        x: 3706
+        y: 2534
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8834aeca154a72e0800000000000000
+      internalID: -2127311892540802930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_40"
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1856
+        width: 505
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 410d6c4a6df040700800000000000000
+      internalID: 505546472734248980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_41"
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1316
+        width: 505
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f81245f7d1815b20800000000000000
+      internalID: 3121418781277165809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_42"
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 739
+        width: 505
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d2f2e2c58fe5daa0800000000000000
+      internalID: -6136735559443090732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_43"
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 136
+        width: 505
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32162223c17b87a70800000000000000
+      internalID: 8825004801560568099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_44"
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 141
+        width: 508
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321455d2853754ba0800000000000000
+      internalID: -6105346897275961053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_0"
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 4583
+        width: 1182
+        height: 537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c95b4f18f954b20800000000000000
+      internalID: 3118073697529076825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_1"
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 2322
+        width: 597
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68d3336870e49aa0800000000000000
+      internalID: -6155047983043585938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_3"
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 4574
+        width: 1430
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a08cc22eecc0700800000000000000
+      internalID: 508008328795261597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es marrons_4"
+      rect:
+        serializedVersion: 2
+        x: 2574
+        y: 4066
+        width: 1430
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac78473be19780340800000000000000
+      internalID: 4830243773121595338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

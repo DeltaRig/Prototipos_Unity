@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
+    private GameController gameController;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
     }
 
     // Update is called once per frame
@@ -21,7 +23,10 @@ public class Coin : MonoBehaviour
         var tag = collision.gameObject.tag;
 
         if (tag == "Player")
+        {
+            gameController.playerFindCoin();
             Destroy(this.gameObject);
-
+        }
+            
     }
 }

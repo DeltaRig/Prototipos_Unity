@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HealthPotion : MonoBehaviour
 {
-    public GameController gameController; // recebe obj no unity
+    private GameController gameController; // recebe obj no unity
 
     private int TOTAL_HEALTH = 1; // quantidade de vida que a poção da
 

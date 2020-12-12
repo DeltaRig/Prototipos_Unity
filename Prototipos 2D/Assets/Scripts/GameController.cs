@@ -8,14 +8,15 @@ public class GameController : MonoBehaviour
     //variaveis relacionadas ao PLAYER
     private PlayerBehaviour playerBehaviour;
     public Image[] ui_playerLifes = new Image[3];
-    private int playerCoin;
+    public Text ui_playerCoins;
+
+    
 
 
 
     private void Awake()
     {
         playerBehaviour = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>(); // pega o código do player
-        playerCoin = 0;
     }
 
     void Start()
@@ -49,7 +50,7 @@ public class GameController : MonoBehaviour
 
     public void playerFindCoin()
     {
-        playerCoin++;
+        ui_playerCoins.text = playerBehaviour.receiveCoin() + "";
     }
 
 }
