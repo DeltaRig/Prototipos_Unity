@@ -12,15 +12,13 @@
 - poção some após hidratação
 - Fazer mapas a partir de imagens pixeladas (Generate level from image file)
 - Implementar sistema de pontos
-- - Receber pontos quando passa por uma moeda
+ - Receber pontos quando passa por uma moeda
+ - Mostrar pontos na tela                      
+ - Testar mudança de imagem com muitos pontos  
 
 *Objetivos iniciais:*
 - Menuzinho inicial
 - GameOver
-- Implementar sistema de pontos
-- - Receber pontos quando passa por uma moeda   FEITO
-- - Mostrar pontos na tela                      FEITO
-- - Testar mudança de imagem com muitos pontos  
 - fazer a camera seguir o pesonagem
 - tiro
 - ataque de perto

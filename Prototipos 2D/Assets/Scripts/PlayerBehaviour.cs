@@ -13,7 +13,7 @@ public class PlayerBehaviour : MonoBehaviour
     public int _life = 3;
 
     [SerializeField]
-    private int playerCoin;
+    private long playerCoin;
 
     private void Awake()
     {
@@ -68,9 +68,9 @@ public class PlayerBehaviour : MonoBehaviour
         }
     }
 
-    public int receiveCoin()
+    public long receiveCoin(long valueCoin)
     {
-        playerCoin++;
+        playerCoin += valueCoin;
         return playerCoin;
     }
 

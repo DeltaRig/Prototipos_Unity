@@ -6,6 +6,9 @@ public class Coin : MonoBehaviour
 {
     private GameController gameController;
 
+    [SerializeField]
+    private long valueCoin;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +27,7 @@ public class Coin : MonoBehaviour
 
         if (tag == "Player")
         {
-            gameController.playerFindCoin();
+            gameController.playerFindCoin(valueCoin);
             Destroy(this.gameObject);
         }
             
