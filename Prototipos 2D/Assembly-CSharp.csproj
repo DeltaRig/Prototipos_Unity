@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\MapController.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\Door.cs" />
+     <Compile Include="Assets\Scripts\CameraFollow.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/hitom/Documents/ProjetosGITs/Prototipos_Unity/Prototipos 2D/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
