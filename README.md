@@ -16,9 +16,9 @@
 - - Mostrar pontos na tela                      
 - - Testar mudança de imagem com muitos pontos  
 - fazer a camera seguir o pesonagem
+- Menuzinho inicial
 
 *Objetivos iniciais:*
-- Menuzinho inicial
 - GameOver
 - tiro
 - ataque de perto
@@ -33,3 +33,6 @@
 - Melhorias p sistema de coins:
 - - valores maiores do 999 ficarem com k
 - - arrumar as imagens para terem o mesmo tamanho
+- Melhorias no menuzinho inicial:
+- - Botão de volume (Quando clicar no botão de volume ele mudar o icone para mutado e passar para 0 o slice ou deixar mais transparente)
+- - Botão de quit
