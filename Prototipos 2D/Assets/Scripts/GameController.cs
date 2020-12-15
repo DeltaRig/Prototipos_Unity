@@ -15,7 +15,13 @@ public class GameController : MonoBehaviour
     private Text ui_playerCoins;
     [SerializeField]
     private Image[] ui_bagCoins = new Image[3];
+
+    //variaveis da sacolinha de dinheiro (bag)
     private float widthBigBagStart = 51.7f;
+
+    //variavel do canvas GameOver
+    [SerializeField]
+    private GameObject ui_gameOver;
 
 
 
@@ -23,6 +29,7 @@ public class GameController : MonoBehaviour
     private void Awake()
     {
         playerBehaviour = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>(); // pega o código do player
+        ui_gameOver.SetActive(false); //utilizado para caso não seja a primeira partida do usuario
     }
 
     void Start()
@@ -37,9 +44,13 @@ public class GameController : MonoBehaviour
     }
 
     // METODOS PLAYER
-    public void playerTakeDamage()
+    public void playerTakeDamage(bool dead)
     {
         ui_playerLifes[playerBehaviour._life].color = new Color32(255, 3, 0, 45);
+        if(dead)
+        {
+            ui_gameOver.SetActive(true);
+        }
 	}
 
     public void playerReceiveHealth()
@@ -82,7 +93,9 @@ public class GameController : MonoBehaviour
             }
         }
         //GUIUtility.ExitGUI();
-            
+
+        
+
     }
 
 }

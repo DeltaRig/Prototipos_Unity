@@ -17,7 +17,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void Awake()
     {
-        //gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+        gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
         playerCoin = 0;
     }
 
@@ -53,7 +53,10 @@ public class PlayerBehaviour : MonoBehaviour
         if (_life > 0)
         {
             _life--;
-            gameController.playerTakeDamage();
+            gameController.playerTakeDamage(false);
+        } else
+        {
+            gameController.playerTakeDamage(true); //dead
         }
         // fazer morte
     }

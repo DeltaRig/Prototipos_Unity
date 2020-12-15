@@ -17,9 +17,10 @@
 - - Testar mudança de imagem com muitos pontos  
 - fazer a camera seguir o pesonagem
 - Menuzinho inicial
+- GameOver
 
 *Objetivos iniciais:*
-- GameOver
+- Tela de pause
 - tiro
 - ataque de perto
 - enemy
@@ -27,12 +28,15 @@
 - spawns de poções
 - spawns de enemys
 - Não pegar poções com vida cheia (adionar um retorno bool no GameController)
+- Dinamica de troca de mapas
 
 *Objetivos para mais adiante:*
 - adicionar mais mapas
 - Melhorias p sistema de coins:
 - - valores maiores do 999 ficarem com k
 - - arrumar as imagens para terem o mesmo tamanho
-- Melhorias no menuzinho inicial:
+- Melhorias no GUI:
 - - Botão de volume (Quando clicar no botão de volume ele mudar o icone para mutado e passar para 0 o slice ou deixar mais transparente)
 - - Botão de quit
+- - Fazer o jogo parar no pause
+- - Fazer redimencionamento do tamanho dos botões de acordo com o tamanho da tela
