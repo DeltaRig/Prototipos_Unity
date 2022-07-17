@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraFollow : MonoBehaviour
+public class CameraController : MonoBehaviour
 {
-    private Transform playerTransform;
-
     public float offset;
+    public Vector2 CameraViewSize => new Vector2(_camera.aspect * 4f * _camera.orthographicSize, 4f * _camera.orthographicSize); // heigh, width
+
+    private Camera _camera;
+    private Transform playerTransform;
     
-    void Start()
+    void Awake()
     {
+        _camera = GetComponent<Camera>();
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
@@ -35,4 +38,6 @@ public class CameraFollow : MonoBehaviour
 
         transform.position = temp;
     }
+
+    
 }

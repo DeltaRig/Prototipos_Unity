@@ -44,7 +44,7 @@ public class PlayerBehaviour : MonoBehaviour
         float inputX = Input.GetAxis("Horizontal"); //puxa das config do unity
         float inputY = Input.GetAxis("Vertical");
 
-        Vector2 movement = new Vector2(speed * inputX * Time.deltaTime, speed * inputY * Time.deltaTime);
+        Vector2 movement = new Vector2(speed * inputX * Time.deltaTime, 0/*speed * inputY * Time.deltaTime*/);
         transform.Translate(movement);
     }
 
