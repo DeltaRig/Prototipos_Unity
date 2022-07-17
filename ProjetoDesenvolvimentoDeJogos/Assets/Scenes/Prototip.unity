@@ -315,12 +315,12 @@ PrefabInstance:
     - target: {fileID: 7519624395135202699, guid: 5dc758e5b94cba648a26289efed0a639,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.95
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 7519624395135202699, guid: 5dc758e5b94cba648a26289efed0a639,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.849
+      value: -4.7
       objectReference: {fileID: 0}
     - target: {fileID: 7519624395135202699, guid: 5dc758e5b94cba648a26289efed0a639,
         type: 3}
@@ -1430,12 +1430,12 @@ PrefabInstance:
     - target: {fileID: 7519624395135202699, guid: 5dc758e5b94cba648a26289efed0a639,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.42
+      value: -0.47000027
       objectReference: {fileID: 0}
     - target: {fileID: 7519624395135202699, guid: 5dc758e5b94cba648a26289efed0a639,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.849
+      value: -4.7
       objectReference: {fileID: 0}
     - target: {fileID: 7519624395135202699, guid: 5dc758e5b94cba648a26289efed0a639,
         type: 3}
@@ -1832,7 +1832,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -3723,12 +3723,12 @@ PrefabInstance:
     - target: {fileID: 7519624395135202699, guid: 5dc758e5b94cba648a26289efed0a639,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.846
+      value: 1.163
       objectReference: {fileID: 0}
     - target: {fileID: 7519624395135202699, guid: 5dc758e5b94cba648a26289efed0a639,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.849
+      value: -4.699
       objectReference: {fileID: 0}
     - target: {fileID: 7519624395135202699, guid: 5dc758e5b94cba648a26289efed0a639,
         type: 3}
