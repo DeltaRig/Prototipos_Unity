@@ -7,9 +7,10 @@ Um speed runner 2D.
 MVP:
 - [x] Menu
 - [x] Gravidade
-- [ ] Vidas e morrer
-- [ ] GameOver
+- [x] Vidas e morrer
+- [x] GameOver
 - [ ] Movimentação da camera continua para direita
+- [x] Gerar primeiros blocos
 - [ ] Gerar novos blocos a direita
 - [ ] Gerar armadilhas, obstaculos, moedas e vidas aleatoriamente com a movimentação da camera
 - [ ] Pulo de verdade
