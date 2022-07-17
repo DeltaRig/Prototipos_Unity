@@ -258,6 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ba08d54ef6de642a1f0affbff2e577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraController: {fileID: 519420030}
   groundTexture: {fileID: 7519624395135202698, guid: 5dc758e5b94cba648a26289efed0a639,
     type: 3}
 --- !u!4 &232038847
