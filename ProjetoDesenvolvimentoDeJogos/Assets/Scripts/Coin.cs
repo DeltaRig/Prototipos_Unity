@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    private GameController gameController;
+    private GameController _gameController;
 
     [SerializeField]
     private long valueCoin;
@@ -12,7 +12,7 @@ public class Coin : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+        _gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
     }
 
     // Update is called once per frame
@@ -27,9 +27,8 @@ public class Coin : MonoBehaviour
 
         if (tag == "Player")
         {
-            gameController.playerFindCoin(valueCoin);
+            _gameController.PlayerFindCoin(valueCoin);
             Destroy(this.gameObject);
         }
-            
     }
 }

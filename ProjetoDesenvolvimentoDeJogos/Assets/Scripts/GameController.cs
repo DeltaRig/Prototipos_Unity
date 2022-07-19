@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
     //variaveis relacionadas ao PLAYER
-    private PlayerBehaviour playerBehaviour;
+    private PlayerBehaviour _playerBehaviour;
     [SerializeField]
     private Image[] ui_playerLifes = new Image[3];
     [SerializeField]
@@ -17,18 +17,15 @@ public class GameController : MonoBehaviour
     private Image[] ui_bagCoins = new Image[3];
 
     //variaveis da sacolinha de dinheiro (bag)
-    private float widthBigBagStart = 51.7f;
+    private float _widthBigBagStart = 51.7f;
 
     //variavel do canvas GameOver
     [SerializeField]
     private GameObject ui_gameOver;
 
-
-
-
     private void Awake()
     {
-        playerBehaviour = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>(); // pega o código do player
+        _playerBehaviour = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehaviour>(); // pega o código do player
         ui_gameOver.SetActive(false); //utilizado para caso não seja a primeira partida do usuario
     }
 
@@ -44,30 +41,29 @@ public class GameController : MonoBehaviour
     }
 
     // METODOS PLAYER
-    public void playerTakeDamage(bool dead)
+    public void PlayerTakeDamage(bool dead)
     {
-        ui_playerLifes[playerBehaviour._life].color = new Color32(255, 3, 0, 45);
+        ui_playerLifes[_playerBehaviour._life].color = new Color32(255, 3, 0, 45);
         if(dead)
         {
             ui_gameOver.SetActive(true);
         }
 	}
 
-    public void playerReceiveHealth()
+    public void PlayerReceiveHealth()
     { 
-        ui_playerLifes[playerBehaviour._life].color = new Color32(255, 255, 255, 255);
+        ui_playerLifes[_playerBehaviour._life].color = new Color32(255, 255, 255, 255);
     }
 
     //METODOS HEALTH POTION
-    public void playerFindPotion(int life)
+    public void PlayerFindPotion(int life)
     {
-        playerBehaviour.receiveLife(life);
-
+        _playerBehaviour.ReceiveLife(life);
     }
 
-    public void playerFindCoin(long valueCoin)
+    public void PlayerFindCoin(long valueCoin)
     {
-        long playerCoins = playerBehaviour.receiveCoin(valueCoin);
+        long playerCoins = _playerBehaviour.ReceiveCoin(valueCoin);
         ui_playerCoins.text = playerCoins + "";
         if(playerCoins >= 10)
         {
@@ -80,7 +76,7 @@ public class GameController : MonoBehaviour
                 Debug.Log("Calculei " + character + "caracteres");
                 // usa na formula do width o width do bag[1] pois esse mantem o valor inicial
 
-                float width = (character * 20) + widthBigBagStart;
+                float width = (character * 20) + _widthBigBagStart;
                 Debug.Log("Calculei " + width + "para largura");
                 ui_bagCoins[2].rectTransform.sizeDelta = new Vector2(width, ui_bagCoins[2].rectTransform.sizeDelta.x);
 
@@ -93,9 +89,6 @@ public class GameController : MonoBehaviour
             }
         }
         //GUIUtility.ExitGUI();
-
-        
-
     }
 
 }
