@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class HealthPotion : MonoBehaviour
 {
-    private GameController gameController; // recebe obj no unity
+    private GameController _gameController; // recebe obj no unity
 
     private int TOTAL_HEALTH = 1; // quantidade de vida que a poção da
 
     private void Awake()
     {
-        gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+        _gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
     }
 
     // Start is called before the first frame update
@@ -31,7 +31,7 @@ public class HealthPotion : MonoBehaviour
 
         if (tag == "Player")
         {
-            gameController.playerFindPotion(TOTAL_HEALTH);
+            _gameController.PlayerFindPotion(TOTAL_HEALTH);
             Destroy(this.gameObject);
         }
             

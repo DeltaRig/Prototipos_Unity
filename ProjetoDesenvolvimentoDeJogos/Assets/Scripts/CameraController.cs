@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public float offset;
-    public Vector2 CameraViewSize => new Vector2(_camera.aspect * 4f * _camera.orthographicSize, 4f * _camera.orthographicSize); // heigh, width
+    public float offset = 10f;
+    public Vector2 CameraViewSize => new Vector2(_camera.aspect * 4f * _camera.orthographicSize, 4f * _camera.orthographicSize); // height, width
 
     private Camera _camera;
-    private Transform playerTransform;
+    private Transform _playerTransform;
     
     void Awake()
     {
         _camera = GetComponent<Camera>();
-        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Update is called once per frame
@@ -22,7 +22,8 @@ public class CameraController : MonoBehaviour
         
     }
 
-    void FixedUpdate(){
+    void FixedUpdate()
+    {
 
     }
 
@@ -30,14 +31,11 @@ public class CameraController : MonoBehaviour
     void LateUpdate()
     {
         Vector3 temp = transform.position;
+        var position = _playerTransform.position;
 
-        temp.x = playerTransform.position.x;
-        temp.y = playerTransform.position.y;
-
-        //temp.x += offset;
+        temp.x = position.x + offset;
+        temp.y = position.y + 4;
 
         transform.position = temp;
     }
-
-    
 }

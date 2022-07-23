@@ -17,10 +17,9 @@ public class ProceduralWorldGeneration : MonoBehaviour
         _groundTextureSize = groundTexture.GetComponent<Renderer>().bounds.size;
         _initialGroundPosition = new Vector2(-(cameraController.CameraViewSize.x / 4), -7);
         
-        for (int i = 0; i < Math.Ceiling(cameraController.CameraViewSize.x / _groundTextureSize.x) + 1; i++)
+        for (int i = 0; i < Math.Ceiling(cameraController.CameraViewSize.x / _groundTextureSize.x) + 10; i++)
         {
             Instantiate(groundTexture, new Vector3(_initialGroundPosition.x + i * (_groundTextureSize.x / 2), _initialGroundPosition.y, 0), Quaternion.identity);
         }
     }
-
 }

@@ -7,13 +7,16 @@ public class PlayerBehaviour : MonoBehaviour
 {
     public GameController gameController; // recebe obj no unity
 
-    //[SerializeField]
-    private int speed = 4;
+    public float jumpForce = 7f;
+    private int _speed = 8;
     private int MAX_LIFE = 3;
     public int _life = 3;
 
     [SerializeField]
     private long playerCoin;
+    private bool _isGrounded;
+
+    private Rigidbody2D _rigidbody;
 
     private void Awake()
     {
@@ -25,53 +28,56 @@ public class PlayerBehaviour : MonoBehaviour
     void Start()
     {
         //vida, identificação de entidades
-
+        _rigidbody = GetComponent<Rigidbody2D>();
     }
-
+    
     // Update is called once per frame
     void Update()
     {
-
+        RaycastHit2D hit = Physics2D.CapsuleCast(transform.position, new Vector2(1f, .4f), CapsuleDirection2D.Vertical, 0, Vector2.down, .7f);
+        _isGrounded = hit.collider != null;
+        
+        if (_isGrounded && Input.GetKeyDown(KeyCode.Space))
+            _rigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
     }
 
     void FixedUpdate()
     {
-        movement();
+        Move();
+        
+        //_rigidbody.velocity = new Vector2(speed, _rigidbody.velocity.y);
     }
 
-    private void movement()
+    private void Move()
     {
-        float inputX = Input.GetAxis("Horizontal"); //puxa das config do unity
-        float inputY = Input.GetAxis("Vertical");
-
-        Vector2 movement = new Vector2(speed * inputX * Time.deltaTime, 0/*speed * inputY * Time.deltaTime*/);
-        transform.Translate(movement);
+        transform.Translate(new Vector2(_speed * Time.deltaTime, 0));
     }
 
-    private void takeDamage()
+    private void TakeDamage()
     {
         if (_life > 0)
         {
             _life--;
-            gameController.playerTakeDamage(false);
-        } else
+            gameController.PlayerTakeDamage(false);
+        } 
+        else
         {
-            gameController.playerTakeDamage(true); //dead
+            gameController.PlayerTakeDamage(true); //dead
         }
         // fazer morte
     }
 
-    public void receiveLife(int life)
+    public void ReceiveLife(int life)
     {
         int aux = _life + life;
         for (int i = _life; i < aux && i < MAX_LIFE; i++)
         {
-            gameController.playerReceiveHealth();
+            gameController.PlayerReceiveHealth();
             _life++;
         }
     }
 
-    public long receiveCoin(long valueCoin)
+    public long ReceiveCoin(long valueCoin)
     {
         playerCoin += valueCoin;
         return playerCoin;
@@ -83,7 +89,7 @@ public class PlayerBehaviour : MonoBehaviour
         var tag = collision.gameObject.tag;
 
         if (tag == "Damage")
-            takeDamage();
+            TakeDamage();
     }
 
 }
