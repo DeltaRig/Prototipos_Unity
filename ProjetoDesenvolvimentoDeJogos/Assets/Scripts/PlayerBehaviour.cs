@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class PlayerBehaviour : MonoBehaviour
 {
-    public GameController gameController; // recebe obj no unity
+    private GameController _gameController; // recebe obj no unity
 
-    public float jumpForce = 7f;
+    public float jumpForce = 7f; // to change on unity
     private int _speed = 8;
-    private int MAX_LIFE = 3;
-    public int _life = 3;
+    const int MaxLife = 3;
+    public int life = 3;
 
     [SerializeField]
     private long playerCoin;
@@ -20,7 +20,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void Awake()
     {
-        gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+        _gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
         playerCoin = 0;
     }
 
@@ -55,25 +55,25 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void TakeDamage()
     {
-        if (_life > 0)
+        if (life > 0)
         {
-            _life--;
-            gameController.PlayerTakeDamage(false);
+            life--;
+            _gameController.PlayerTakeDamage(false);
         } 
         else
         {
-            gameController.PlayerTakeDamage(true); //dead
+            _gameController.PlayerTakeDamage(true); //dead
         }
         // fazer morte
     }
 
     public void ReceiveLife(int life)
     {
-        int aux = _life + life;
-        for (int i = _life; i < aux && i < MAX_LIFE; i++)
+        int aux = this.life + life;
+        for (int i = this.life; i < aux && i < MaxLife; i++)
         {
-            gameController.PlayerReceiveHealth();
-            _life++;
+            _gameController.PlayerReceiveHealth();
+            this.life++;
         }
     }
 

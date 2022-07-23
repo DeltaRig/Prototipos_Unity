@@ -6,7 +6,7 @@ public class HealthPotion : MonoBehaviour
 {
     private GameController _gameController; // recebe obj no unity
 
-    private int TOTAL_HEALTH = 1; // quantidade de vida que a poção da
+    const int TotalHealth = 1; // quantidade de vida que a poção da
 
     private void Awake()
     {
@@ -31,7 +31,7 @@ public class HealthPotion : MonoBehaviour
 
         if (tag == "Player")
         {
-            _gameController.PlayerFindPotion(TOTAL_HEALTH);
+            _gameController.PlayerFindPotion(TotalHealth);
             Destroy(this.gameObject);
         }
             
