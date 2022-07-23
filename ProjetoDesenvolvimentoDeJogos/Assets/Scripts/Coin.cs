@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Coin : MonoBehaviour
 {
     private GameController _gameController;
 
     [SerializeField]
-    private long _valueCoin;
+    private long valueCoin = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,7 @@ public class Coin : MonoBehaviour
 
         if (tag == "Player")
         {
-            _gameController.PlayerFindCoin(_valueCoin);
+            _gameController.PlayerFindCoin(valueCoin);
             Destroy(this.gameObject);
         }
     }

@@ -5,11 +5,12 @@ using UnityEngine.UI;
 
 public class PlayerBehaviour : MonoBehaviour
 {
+    const int MaxLife = 3;
+    
     private GameController _gameController; // recebe obj no unity
 
     public float jumpForce = 7f; // to change on unity
     private int _speed = 8;
-    const int MaxLife = 3;
     public int life = 3;
 
     [SerializeField]
@@ -83,7 +84,6 @@ public class PlayerBehaviour : MonoBehaviour
         return playerCoin;
     }
 
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         var tag = collision.gameObject.tag;
@@ -91,5 +91,4 @@ public class PlayerBehaviour : MonoBehaviour
         if (tag == "Damage")
             TakeDamage();
     }
-
 }
