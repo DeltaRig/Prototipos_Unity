@@ -7,10 +7,10 @@ public class PlayerBehaviour : MonoBehaviour
 {
     const int MaxLife = 3;
     
-    private GameController _gameController; // recebe obj no unity
+    private GameController _gameController; 
 
     public float jumpForce = 7f; // to change on unity
-    private int _speed = 8;
+    private float _speed = 10;
     public int life = 3;
 
     [SerializeField]
@@ -19,17 +19,23 @@ public class PlayerBehaviour : MonoBehaviour
 
     private Rigidbody2D _rigidbody;
 
+    private float _positionTemp;
+    private float _timeDamege;
+    private float WaitTimeDamage = 0.2f;
+
     private void Awake()
     {
         _gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
         playerCoin = 0;
+        _timeDamege = WaitTimeDamage;
     }
-
+ 
     // Start is called before the first frame update
     void Start()
     {
         //vida, identificação de entidades
         _rigidbody = GetComponent<Rigidbody2D>();
+        _positionTemp = _rigidbody.position.x - 1;
     }
     
     // Update is called once per frame
@@ -44,8 +50,21 @@ public class PlayerBehaviour : MonoBehaviour
 
     void FixedUpdate()
     {
+        _speed += .0001f;
         Move();
+
+        _timeDamege += Time.deltaTime;
         
+        if ( _rigidbody.position.x == _positionTemp)
+        {
+            if(_timeDamege > WaitTimeDamage)
+            {
+                _timeDamege = 0;
+                TakeDamage();
+            }
+        }
+        
+        _positionTemp = _rigidbody.position.x;
         //_rigidbody.velocity = new Vector2(speed, _rigidbody.velocity.y);
     }
 
@@ -88,7 +107,12 @@ public class PlayerBehaviour : MonoBehaviour
     {
         var tag = collision.gameObject.tag;
 
-        if (tag == "Damage")
-            TakeDamage();
+        if (tag == "Damage"){
+            if (_timeDamege > WaitTimeDamage)
+            {
+                _timeDamege = 0;
+                TakeDamage();
+            }
+        }
     }
 }

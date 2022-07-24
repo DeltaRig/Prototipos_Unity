@@ -55,7 +55,7 @@ public class ProceduralWorldGeneration : MonoBehaviour
 
             bool spawnedSpine = false;
 
-            if (Random.Range(0, 1000) < 50)
+            if (Random.Range(0, 1000) < 200)
             {
                 Spawn(spineTexture, i, offsetY, false);
                 spawnedSpine = true;
