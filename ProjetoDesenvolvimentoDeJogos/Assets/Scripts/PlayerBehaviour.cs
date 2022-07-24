@@ -10,7 +10,7 @@ public class PlayerBehaviour : MonoBehaviour
     private GameController _gameController; // recebe obj no unity
 
     public float jumpForce = 7f; // to change on unity
-    private int _speed = 8;
+    private float _speed = 10;
     public int life = 3;
 
     [SerializeField]
@@ -44,6 +44,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     void FixedUpdate()
     {
+        _speed += .001f;
         Move();
         
         //_rigidbody.velocity = new Vector2(speed, _rigidbody.velocity.y);
