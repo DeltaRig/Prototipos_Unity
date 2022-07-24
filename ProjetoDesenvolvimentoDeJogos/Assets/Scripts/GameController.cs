@@ -16,6 +16,8 @@ public class GameController : MonoBehaviour
     private Text uiPlayerCoins;
     [SerializeField]
     private Image[] uiBagCoins = new Image[3];
+    [SerializeField]
+    private Text uiPlayerResult;
 
     //variaveis da sacolinha de dinheiro (bag)
     private float _widthBigBagStart = 51.7f;
@@ -32,13 +34,12 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        _gameTime += Time.deltaTime;
     }
 
     // METODOS PLAYER
@@ -47,6 +48,7 @@ public class GameController : MonoBehaviour
         uiPlayerLifes[_playerBehaviour.life].color = new Color32(255, 3, 0, 45);
         if(dead)
         {
+            uiPlayerResult.text = uiPlayerCoins.text + " coins\n"; // + _gameTime + " seconds";
             uiGameOver.SetActive(true);
         }
 	}
@@ -80,8 +82,6 @@ public class GameController : MonoBehaviour
                 float width = (character * 20) + _widthBigBagStart;
                 Debug.Log("Calculei " + width + "para largura");
                 uiBagCoins[2].rectTransform.sizeDelta = new Vector2(width, uiBagCoins[2].rectTransform.sizeDelta.x);
-
-
             }
             else // dois caracteres
             {
