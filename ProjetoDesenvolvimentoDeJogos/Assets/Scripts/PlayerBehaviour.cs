@@ -7,7 +7,7 @@ public class PlayerBehaviour : MonoBehaviour
 {
     const int MaxLife = 3;
     
-    private GameController _gameController; // recebe obj no unity
+    private GameController _gameController;
 
     public float jumpForce = 7f; // to change on unity
     private float _speed = 10;
