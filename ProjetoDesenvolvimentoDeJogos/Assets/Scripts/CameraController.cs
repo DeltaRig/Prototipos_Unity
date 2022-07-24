@@ -34,7 +34,7 @@ public class CameraController : MonoBehaviour
         var position = _playerTransform.position;
 
         temp.x = position.x + offset;
-        temp.y = position.y + 4;
+        temp.y = position.y + 2;
 
         transform.position = temp;
     }
